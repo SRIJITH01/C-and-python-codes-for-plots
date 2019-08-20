@@ -26,14 +26,14 @@ T1=np.array([np.cos(theta),-np.sin(theta)])
 T2=np.array([np.sin(theta),np.cos(theta)])
 T=np.vstack((T1,T2))
 J=T@O1
-M=J+P
+Q1=J+P
 
 F1=np.array([np.cos(-theta),-np.sin(-theta)])
 F2=np.array([np.sin(-theta),np.cos(-theta)])
 F=np.vstack((F1,F2))
 Y=F@O1
 print(Y)
-A=Y+P
+Q2=Y+P
 
 x_PO=line_gen(P,O)
 x_AP=line_gen(A,P)
@@ -43,10 +43,10 @@ plt.plot(P[0], P[1], 'o')
 plt.text(P[0] * (1 + 0.1), P[1] * (1 - 0.1) , 'P')
 plt.plot(O[0], O[1], 'o')
 plt.text(O[0] * (1 - 0.2), O[1] * (1) , 'O')
-plt.plot(M[0], M[1], 'o')
-plt.text(M[0] * (1 + 0.1), M[1] * (1 - 0.1) , 'M')
-plt.plot(A[0], A[1], 'o')
-plt.text(A[0] * (1 + 0.1), A[1] * (1 - 0.1) , 'A')
+plt.plot(Q1[0], Q1[1], 'o')
+plt.text(Q1[0] * (1 + 0.1), Q1[1] * (1 - 0.1) , 'Q1')
+plt.plot(Q2[0], Q2[1], 'o')
+plt.text(Q2[0] * (1 + 0.1), Q2[1] * (1 - 0.1) , 'Q2')
 
 plt.plot(x_PO[0,:],x_PO[1,:],label='$PO$')
 plt.plot(x_PM[0,:],x_PM[1,:],label='$PM$')
