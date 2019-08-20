@@ -36,8 +36,8 @@ print(Y)
 Q2=Y+P
 
 x_PO=line_gen(P,O)
-x_AP=line_gen(A,P)
-x_PM=line_gen(P,M)
+x_AP=line_gen(P,Q1)
+x_PM=line_gen(P,Q2)
 
 plt.plot(P[0], P[1], 'o')
 plt.text(P[0] * (1 + 0.1), P[1] * (1 - 0.1) , 'P')
@@ -49,8 +49,8 @@ plt.plot(Q2[0], Q2[1], 'o')
 plt.text(Q2[0] * (1 + 0.1), Q2[1] * (1 - 0.1) , 'Q2')
 
 plt.plot(x_PO[0,:],x_PO[1,:],label='$PO$')
-plt.plot(x_PM[0,:],x_PM[1,:],label='$PM$')
-plt.plot(x_AP[0,:],x_AP[1,:],label='$AP$')
+plt.plot(x_PQ1[0,:],x_PQ1[1,:],label='$PQ1$')
+plt.plot(x_PQ2[0,:],x_PQ2[1,:],label='$PQ2$')
 plt.plot(x_circ[0,:],x_circ[1,:],label='$circle$')
 plt.xlabel('$X$')
 plt.ylabel('$Y$')
