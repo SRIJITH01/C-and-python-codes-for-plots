@@ -41,8 +41,6 @@ plt.plot(l2_p[0,:],l2_p[1,:],l2_p[2,:],label="Line L2")
 plt.plot(l3_p[0,:],l3_p[1,:],l3_p[2,:],label="Line L3")
 
 #corresponding z for planes
-
-
 #plotting planes
 
 #show plot
