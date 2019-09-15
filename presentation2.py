@@ -7,7 +7,7 @@ import numpy as np
 O = np.array([0,0,0]).reshape((3,1))
 l1 = np.array([1,0,0]).reshape((3,1))
 O = np.array([0,0,0]).reshape((3,1))
-l2 = np.array([np.sqrt(3)/2,0,1/2]).reshape((3,1))
+l2 = np.array([np.sqrt(3)/2,1/2,0]).reshape((3,1))
 
 
 
@@ -25,7 +25,7 @@ O = np.array([0,0,0]).reshape((3,1))
 l3= np.array([-np.sqrt(3)/2,1/2,0]).reshape((3,1))
 A = np.array([1,0,0]).reshape((3,1))
 B = np.array([-np.sqrt(3)/2,1/2,0]).reshape((3,1))
-C = np.array([np.sqrt(3)/2,0,1/2]).reshape((3,1))
+C = np.array([np.sqrt(3)/2,1/2,0]).reshape((3,1))
 
 l1_p = line_dir_pt(l1,O)
 l2_p = line_dir_pt(l2,O)
