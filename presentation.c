@@ -20,7 +20,30 @@ double s=1/m;
 double **A=linalg_scalmatmul(P, s,3, 1);
 printf("A=\n");
 print(A,3,1);savetxt(A,"A.dat",3,1);
-return 0;
+
+	// calculating x with A^TB=-sqrt(3)/
+	const double AB=-cbrt(0.75);
+	const double a=1;
+	const double b=1;
+	double  x;
+
+    x = AB/a*b;
+    printf( "x=%lf ",x);
+    
+    // constant PI is defined
+    const double PI =  3.1415926;
+    double  result;
+     result = acos(x);
+    printf("Inverse of cos(%.2f) = %.2lf in radians\n", x ,result);
+    // converting radians to degree
+    result = acos(x)*180/PI;
+    printf("Inverse of cos(%.2f) = %.2lf in degrees\n", x, result);
+    // paramter not in range
+    x = 1.2;
+    result = acos(x);
+    printf("Inverse of cos(%.2f) = %.2lf", x, result);
+  
+    return 0;
 }
 
 
