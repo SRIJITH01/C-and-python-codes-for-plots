@@ -5,7 +5,7 @@ M=np.roots(coeffs)#s2<x<s1
 print(np.roots(coeffs))
 s1=M.T@np.array([1,0])#s1=5
 s2=M.T@np.array([0,1])#s2=4
-cur_x = 1 # The algorithm starts at x=1
+cur_x = 1 # The algorithm starts at x=4
 gamma = 0.01 # step size multiplier
 precision = 0.00001
 previous_step_size = 1 
