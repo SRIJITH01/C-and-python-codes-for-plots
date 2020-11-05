@@ -1,2 +1,3 @@
-# Srijith
+
 Use all u can 
+bodeplot
